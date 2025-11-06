@@ -52,5 +52,5 @@ jobs:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
         run: |
           curl -X POST -H "Content-Type: application/json" \
-            -d '{"content": "❌ Build failed on branch ${{ github.ref_name }}!"}' \
+            -d '{"content": " Build failed on branch ${{ github.ref_name }}!"}' \
             $WEBHOOK_URL
